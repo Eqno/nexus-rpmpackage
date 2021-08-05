@@ -1,4 +1,0 @@
-#!/bin/sh
-VERSION=3.33.0
-RELEASE=01
-sudo -u nexus /usr/local/nexus/nexus-${VERSION}-${RELEASE}/bin/nexus

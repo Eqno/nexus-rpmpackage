@@ -1,2 +1,0 @@
-#!/bin/sh
-sudo -u nexus /usr/local/nexus/nexus-3.30.1-01/bin/nexus $1
