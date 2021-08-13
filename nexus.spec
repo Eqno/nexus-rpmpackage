@@ -35,7 +35,7 @@ git %{SETGITENV} checkout -b %{BRANCH} origin/%{BRANCH} --
 cd %{GITDIR} && %{GITDIR}/mvnw clean install %{SKIPTEST} %{BUILDVERSION}
 unzip %{GITDIR}/assemblies/%{BASEDIR}/target/%{BASEDIR}-%{VER}.zip -d %{RELEASEDIR}
 mv %{RELEASEDIR}/%{BASEDIR}-%{VER} %{RELEASEDIR}/%{MAIN}
-echo -e '#!/bin/sh\nsudo -u nexus /usr/local/nexus/%{MAIN}/bin/nexus' > 'nexus'
+echo -e '#!/bin/sh\nsudo -u nexus /usr/local/nexus/%{MAIN}/bin/nexus' > $RPM_BUILD_DIR/'nexus'
 
 %define ROOT_APP $RPM_BUILD_ROOT/%{prefix}
 %define ROOT_BIN $RPM_BUILD_ROOT/%{_bindir}
