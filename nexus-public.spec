@@ -51,8 +51,8 @@ rm -r %{prefix}
 
 %changelog
 * Mon Sep 06 2021 Eqnoxx <Eqnoxx@163.com> 3.33.1-01
-- Third packaging, remove user nexus and remove nexus from system service.
+- Third packaging, remove user nexus and remove nexus-public from system service.
 * Sat Sep 04 2021 Eqnoxx <Eqnoxx@163.com> 3.33.1-01
-- Second packaging, add nexus to system service.
+- Second packaging, correct the package name add nexus-public to system service.
 * Thu Aug 05 2021 Eqnoxx <Eqnoxx@163.com> 3.33.0-01
 - First packaging, start nexus through user nexus.
